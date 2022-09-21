@@ -1,3 +1,5 @@
+#sum and difference
+
 a=int(input())
 b=int(input())
 c=a+b
@@ -5,3 +7,11 @@ print(c)
 d=a-b
 print(d)
 
+#product and division
+
+m=int(input())
+n=int(input())
+print(m*n)
+print(m//n)
+print(m%n)
+print(m/n)
