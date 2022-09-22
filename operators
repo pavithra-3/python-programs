@@ -1,5 +1,4 @@
 #sum and difference
-
 a=int(input())
 b=int(input())
 c=a+b
@@ -8,9 +7,7 @@ d=a-b
 print(d)
 
 
-
 #product and division
-
 m=int(input())
 n=int(input())
 print(m*n)
@@ -27,7 +24,6 @@ b=a-b
 a=a-b
 print(a)
 print(b)
-
 
 
 #average calculation
