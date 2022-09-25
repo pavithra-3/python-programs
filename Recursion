@@ -1,1 +1,69 @@
+#BINARY EQUIVALENT OF A NUMBER USING RECURSION
+def convert(n):
+    if n==0:
+        return 0
+    return convert(n//2)*10+n%2
+x=int(input())
+print(convert(x))
 
+
+#FIBONACCI SERIES
+def fib(x):
+    n1,n2=0,1
+    count=0
+    while count<x:
+        print(n1)
+        n3=n1+n2
+        n1=n2
+        n2=n3
+        count+=1
+n=int(input())
+fib(n)
+
+
+#ODD OR EVEN
+def eo(x):
+    if x%2==0:
+        print("Even!")
+    else:
+        print("Odd!")
+a=int(input())
+eo(a)
+
+
+#FACTORIAL
+def fact(x):
+    i=1
+    b=1
+    while i<=x:
+        b*=i
+        i=i+1
+    print(b)
+a=int(input())
+fact(a)
+
+
+#LCM OF TWO NUMBERS
+def lcm(x,y):
+    if x>=y:
+        n=x
+    else:
+        n=y
+    while(1):
+        if(n%x==0 and n%y==0):
+            print(n)
+            break
+        n+=1
+        
+a=int(input())
+b=int(input())
+lcm(a,b)
+
+
+#DECIMAL TO BINARY
+def convert(n):
+    if n>1:
+        convert(n//2)
+    print(n%2,end="")
+dec=int(input())
+convert(dec)
