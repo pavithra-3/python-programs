@@ -1,1 +1,162 @@
+PATTERN 1
+*****
+*****
+*****
+*****
+*****
+n=int(input())
+for i in range(0,n):
+    for j in range(0,n):
+        print("*",end="")
+    print()
+    
 
+PATTERN 2
+11111
+22222
+33333
+44444
+55555
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print(i,end="")
+    print()
+
+
+#PATTERN 3
+*
+**
+***
+****
+***** 
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print("*",end="")
+    print()
+
+
+#PATTERN 4
+*****
+****
+***
+**
+*
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if i+j<=n+1:
+            print("*",end="")
+        else:
+            print("",end="")
+    print()
+
+
+#PATTERN 5
+    *
+   **
+  ***
+ ****
+*****
+n=int(input())
+for i in range(1,n+1):
+    print(" "*(n-i)+"*"*i)
+
+
+#PATTERN 6
+*****
+ ****
+  ***
+   **
+    * 
+n=int(input())
+for i in range(n,1,-1):
+    for j in range(0,(n-i)):
+        print("",end="")
+    for k in range(i,(2*i)-1):
+        print("*",end="")
+    for k in range(1,i-1):
+        print("*",end="")
+    print()
+    
+    
+#PATTERN 7
+*****
+*     *
+*     *
+*     *
+*****
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if(i==1 or i==n or j==1 or j==n):
+            print("*",end="")
+        else:
+            print("",end=" ")
+    print()
+
+
+#PATTERN 8
+   *
+   ***
+  *****
+ *******
+********* 
+n=int(input())
+k=0
+for i in range(1,n+1):
+    for j in range(1,(n-i)+1):
+        print(end=" ")
+    while k!=((2*i)-1):
+        print("*",end="")
+        k+=1
+    k=0
+    print()
+    
+
+PATTERN 9
+*********
+ *******
+  *****
+   ***
+    *
+n=int(input())
+for i in range(n+1,1,-1):
+    for j in range(-1,(n-i)):
+        print(" ",end="")
+    for k in range(i,(2*i)-1):
+        print("*",end="")
+    for k in range(1,(i-1)):
+        print("*",end="")
+    print()
+
+
+#PATTERN 10
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    * 
+n=int(input())
+k=0
+for i in range(1,n):
+    for j in range(1,(n-i)+1):
+        print(end=" ")
+    while k!=((2*i)-1):
+        print("*",end="")
+        k+=1
+    k=0
+    print()
+for i in range(n+1,1,-1):
+    for j in range(-1,(n-i)):
+        print(" ",end="")
+    for k in range(i,(2*i)-1):
+        print("*",end="")
+    for k in range(1,(i-1)):
+        print("*",end="")
+    print()
