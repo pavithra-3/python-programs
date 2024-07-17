@@ -76,23 +76,3 @@ if n in 'aeiouAEIOU':
 else:
     print("not vowel")
     
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
